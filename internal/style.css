@@ -1,0 +1,414 @@
+/*--------------------Basic Setup-------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #555;
+    font-family: sans-serif;
+    font-weight:300;
+    font-size:20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    
+}
+
+
+/*----------------Reusable components---------------------*/
+.row{
+    max-width: 1140px;
+    margin:auto;
+}
+section{
+    padding: 80px 0;
+}
+h1,
+h2,
+h3{
+    font-weight:300;
+    text-transform:uppercase;
+}
+h1{
+    margin-top:3em;
+   
+    text-align:center;
+    color:#fff ;
+    font-size:240%;
+    word-spacing:4px;
+    letter-spacing:1px;
+}
+h2{
+    font-size:180%;
+    word-spacing:2px;
+    text-align: center;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+h3{
+    font-size:110%;
+    margin-bottom: 15px;
+}
+
+p{
+    color:#a5a5a5;
+}
+
+
+/*------------links-------------*/
+a:link,
+a:visited{
+    color:#f00909;
+    text-decoration:none;
+    padding-bottom:1px;
+    border-bottom:1px solid #f00909;
+    transition: border-bottom 0.2s, color 0.2s;
+   
+    
+}
+a:hover,
+a:active{
+    color:#555;
+    border-bottom: 1px solid transparent;
+    
+}
+/*-------Buttons--------*/
+
+
+.btn:link,
+.btn:visited{
+    text-align:center;
+    border-radius:5px;
+    width:9rem;
+    margin:10px auto 10px auto;
+    display:block;
+    padding:10px 30px;
+    font-weight:300;
+    text-decoration: none;
+
+    transition:background-color 0.2s, border 0.2s, color 0.2s;
+   
+}
+
+.btn-arrivals:link,
+.btn-arrivals:visited{
+    background-color:rgba(240, 9, 9, 0.6);
+    border: 1px solid rgba(240, 9, 9, 0.69);
+    color:#fff;
+   }
+.btn:hover,
+.btn:active{
+    background-color:rgba(255, 0, 0, 0.74);
+}
+.btn-arrivals:hover,
+.btn-arrivals:active{
+    border: 1px solid rgba(255, 0, 0, 0.74);
+}
+
+
+
+
+
+
+
+
+/*-----------header--------------*/
+header{ 
+background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/jump.jpg);
+background-size:cover;
+background-position:center;
+height: 100vh;
+background-attachment:fixed;
+    
+}
+
+  /*----Main Navi---*/
+
+
+.main-nav{
+    margin-top:
+    list-style: none;
+    margin:1em auto;
+
+    
+}
+.main-nav li{
+    display: inline-block;
+   font-size:25px;
+    word-spacing:50px;
+    margin:10px;
+     }
+.row ul{
+    text-align:center;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding:8px 0;
+    color:#fff;
+    text-decoration:none;
+    font-size:90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom: 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid #f00909;
+}
+
+
+/*-----------*/
+
+
+
+
+
+
+
+
+
+  
+/*------ADIDAS-----*/
+.adidas-shoes img{
+    width:203px;
+    height:248px;
+}
+.adidas-shoes li{
+    list-style:none;
+    display:inline-block;
+    margin:10px auto 10px auto;
+}
+
+/*----------Nike------------*/
+.nike-shoes img{
+    width:203px;
+    height:248px;
+}
+.nike-shoes li{
+    list-style:none;
+    display:inline-block;
+    margin:10px auto 10px auto;
+}
+
+/*-----------Jordans--------------*/
+.jordans-shoes img{
+    width:203px;
+    height:248px;
+}
+.jordans-shoes li{
+    list-style:none;
+    display:inline-block;
+    margin:10px auto 10px auto;
+}
+
+/*------------New shoes------------------------*/
+.new-shoes img{
+     width:203px;
+    height:248px;
+}
+
+.new-shoes li{
+     list-style:none;
+    display:inline-block;
+    margin:10px auto 10px auto;
+}
+
+/*---------cities---------*/
+
+.los-pic{
+     width:50vw;
+    height:80vh;
+    background: url(../external/image/losang.jpg);
+     background-size: cover;
+    background-position:center;
+}
+.los-text{
+    width:100%;
+    height: 100%;
+    font-size:90%;
+    background: #FFF;
+    opacity:0;
+   
+}
+
+.los-pic:hover .los-text{
+   
+    opacity: 0.6;
+    text-align:center;
+    color:#000;
+    font-size:3rem;
+    font-weight: 700;
+    padding-top: 20vh;
+    
+}
+.san-pic{
+     width:50vw;
+    height:80vh;
+    background: url(../external/image/francisco.jpg) ;
+    background-size: cover;
+    background-position:center;
+    
+    
+}
+.san-text{
+    width:100%;
+    height: 100%;
+    font-size:90%;
+    background: #FFF;
+    opacity:0;
+    
+  
+}
+
+.san-pic:hover .san-text{
+    opacity: 0.6;
+    text-align:center;
+    color:#000;
+    font-size:3rem;
+    font-weight: 700;
+    padding:30px;
+   padding-top: 20vh
+}
+
+
+.cities li{
+    list-style:none;
+    display:inline-block;
+    margin:10px auto 10px auto;
+}
+
+@media (max-width:400px){
+    .los-pic{
+        width:80vw;
+        height:50vh;
+    }  
+    .los-text h2{
+        font-size:2rem;
+    }
+    .san-pic{
+       width:80vw;
+        height:50vh; 
+    }
+    .san-text h2{
+        font-size:2rem;
+    }
+}
+
+
+/*------------footer-------------*/
+footer{
+    background-color:rgba(88, 88, 88, 0.1);
+    padding:50px;
+    font-size:100%;
+    color:#555555;
+    width:100%;
+    text-align: center;
+
+}
+.info-box{
+    width:100%;
+    height:300px;
+    margin:5%;
+  
+}
+.info-line{
+  border-right:1px solid #b2b2b2; 
+}
+
+.info-box h2{
+    color:rgba(87, 87, 87, 0.68);
+    font-size:150%;
+}
+
+.title{
+    margin-left:1.5rem;
+}
+@media  (max-width:420px){
+    .main-nav li{
+        margin:10px;
+    }
+    .info-box{
+        border-right: 0;
+    }
+.info-box h2:last-child{
+    margin-left:-2rem;
+    
+}
+}
+
+@media  (max-width:280px){
+    
+
+.info-box h2:last-child{
+    margin:40px;
+}
+}
+/*------contact-----------*/
+.point1{
+    
+    color:#606060;
+    font-size:90%;
+  margin-bottom:10px;
+    text-align:left;
+    margin-left:1vw;
+}
+/*---social links---*/
+.social-links{
+    list-style:none;
+    
+}
+.social-links li{
+    display:inline-block;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+
+    transition: color 0.2s;
+    color: #606060;
+     font-size:220%;
+     text-decoration:none;
+    border:0;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+transition: color 0.2s;
+padding:10px;
+   
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+   color:#00aced; 
+}
+.ion-social-googleplus:hover{
+    color:#dd4b39;
+}
+.ion-social-instagram:hover{
+   color:#517fa4; 
+}
+/*-----------icons--------------*/
+
+
+
+/*------------Email------------*/
+#email{
+    width:120%;
+    margin-left:-10%;
+    margin-bottom:20px;
+    border-radius:2px;
+}    
+
+
+
